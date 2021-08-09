@@ -35,7 +35,7 @@ class ViewController: UIViewController {
                     switch result {
                     case .success(let credentials):
                         self.retrievedCredentials = credentials
-                        
+                        print("Success: \(credentials.description)")
                     case .failure(let error):
                         print("error: \(error.localizedDescription)")
                     }
