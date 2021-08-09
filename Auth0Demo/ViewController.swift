@@ -29,7 +29,7 @@ class ViewController: UIViewController {
                 usernameOrEmail: self.textFieldEmail.text!,
                 password: self.textFieldPassword.text!,
                 realm: "Username-Password-Authentication",
-                scope: "openid profile")
+                scope: "openid profle offline_access")
             .start { result in
                 DispatchQueue.main.async {
                     switch result {
